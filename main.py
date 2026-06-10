@@ -1,5 +1,4 @@
 num_sum = 0
-
 for num in range(1, 101):
     if num % 2 == 0:
         num_sum += num
@@ -10,18 +9,14 @@ print(f"Сумма всех нечетных числе от 1 до 100: {num_su
 print(f"Список квадратов нечетных чисел от 1 до 10 - f{squares}")
 
 nums_count = 0
-while True:
+input_num = 0
+while input_num >= 0:
     try:
-        input_num = float(input("Введите отрицательное число: "))
+        input_num = float(input("Введите число: "))
     except ValueError:
         print("Введено не число.")
         continue
-
     nums_count += 1
-    if input_num < 0:
-        print(f"Количество введенных чисел - {nums_count}")
-        print("Введено отрицательное число. Завершение работы программы.")
 
-        break
-    else:
-        print("Введено не отрицательное число. Повторите попытку.")
+print(f"Количество введенных чисел - {nums_count}")
+print("Введено отрицательное число. Завершение работы программы.")
