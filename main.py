@@ -6,7 +6,7 @@ for num in range(1, 101):
 squares = [num ** 2 for num in range(1, 11) if num % 2 != 0]
 
 print(f"Сумма всех нечетных числе от 1 до 100: {num_sum}")
-print(f"Список квадратов нечетных чисел от 1 до 10 - f{squares}")
+print(f"Список квадратов нечетных чисел от 1 до 10 - {squares}")
 
 nums_count = 0
 input_num = 0
